@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Makan Arofah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  // Jika URL mengandung # (anchor), hapus setelah halaman dimuat
+  window.addEventListener("load", () => {
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname);
+    }
+  });
+</script>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">UMKM</div>
+        <div class="judul">
+            <h1>Warung Makan Arofah</h1>
+            <p>Masakan rumahan, rasa istimewa dengan harga bersahabat!</p>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="active">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#menu">Menu</a>
+            <a href="#promo">Promo</a>
+            <a href="#testimoni">Testimoni</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+    <!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-content">
+      <h1>Selamat Datang di Warung Makan Arofah</h1>
+      <p>Masakan rumahan dengan cita rasa istimewa — nikmati kelezatan khas Nusantara setiap hari!</p>
+      <a href="#menu" class="btn-utama">Lihat Menu</a>
+      <a href="#promo" class="btn-outline">Lihat Promo</a>
+  </div>
+</section>
+
+
+    <!-- Tentang Warung -->
+    <section class="tentang fade-in" id="tentang">
+        <div class="tentang-container">
+            <div class="tentang-text slide-up">
+                <h2>Warung Makan Arofah</h2>
+                <p>
+                    <strong>Warung Makan Arofah</strong> adalah tempat makan sederhana namun penuh cita rasa yang terletak di jantung kota Jember.
+                    Kami menghadirkan suasana nyaman dan hangat — cocok untuk makan bersama keluarga, teman, maupun rekan kerja.
+                </p>
+                <p>
+                    Setiap hidangan kami dimasak dengan bahan-bahan segar pilihan dan bumbu khas rumahan yang menggugah selera.
+                    Dari lalapan gurame yang gurih hingga es jeruk yang menyegarkan, semua menu kami disajikan dengan penuh cinta dan kebersihan terjamin.
+                </p>
+                <p>
+                    Selain cita rasa yang lezat, kami juga dikenal dengan <strong>harga yang ramah di kantong</strong>.
+                    Kami percaya bahwa makanan enak tidak harus mahal — cukup datang ke Warung Arofah dan nikmati rasa nikmat khas rumahan yang tak terlupakan!
+                </p>
+                <p>
+                    Jadi tunggu apa lagi? Datang dan rasakan kelezatan masakan kami setiap hari, hanya di <em>Warung Makan Arofah</em> — nikmat, hemat, dan menyenangkan!
+                </p>
+            </div>
+            <div class="tentang-img slide-up">
+                <img src="warung.jpg" alt="Foto Warung Makan Arofah">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Makanan -->
+    <main id="menu">
+        <section class="menu-section fade-in">
+            <h2>Daftar Menu Makanan</h2>
+            <div class="menu-grid">
+                
+                <div class="menu-card slide-up">
+                    <img src="gurame.jpg" alt="Lalapan Gurame">
+                    <h3>Lalapan Gurame</h3>
+                    <p class="price">Rp27.000</p>
+                    <p class="desc">Gurame goreng atau bakar renyah berbalut bumbu bawang dan ketumbar, disajikan dengan nasi hangat, sambal terasi, dan lalapan segar.</p>
+                </div>
+
+                <div class="menu-card slide-up">
+                    <img src="lele.jpg" alt="Lalapan Lele">
+                    <h3>Lalapan Lele</h3>
+                    <p class="price">Rp10.000</p>
+                    <p class="desc">Lele goreng gurih yang renyah di luar dan lembut di dalam, dilengkapi sambal pedas dan lalapan segar khas rumahan.</p>
+                </div>
+
+                <div class="menu-card slide-up">
+                    <img src="ayam.jpg" alt="Lalapan Ayam">
+                    <h3>Lalapan Ayam</h3>
+                    <p class="price">Rp15.000</p>
+                    <p class="desc">Ayam goreng atau bakar berbumbu kuning khas nusantara dengan sambal bawang nikmat dan lalapan segar.</p>
+                </div>
+
+                <div class="menu-card slide-up">
+                    <img src="tempe.jpg" alt="Lalapan Tempe">
+                    <h3>Lalapan Tempe</h3>
+                    <p class="price">Rp7.000</p>
+                    <p class="desc">Tempe goreng kering berbumbu sederhana namun menggugah selera, disajikan dengan sambal terasi dan lalapan mentimun serta kol segar.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Menu Minuman -->
+        <section class="menu-section fade-in" id="minuman">
+            <h2>Daftar Menu Minuman</h2>
+            <div class="menu-grid">
+
+                <div class="menu-card slide-up">
+                    <img src="esteh.jpg" alt="Es Teh / Teh Panas">
+                    <h3>Es Teh / Teh Panas</h3>
+                    <p class="price">Rp3.000</p>
+                    <p class="desc">Teh melati pilihan dengan rasa manis yang pas. Dapat dinikmati dingin atau panas, cocok untuk menemani setiap hidangan.</p>
+                </div>
+
+                <div class="menu-card slide-up">
+                    <img src="esjeruk.jpg" alt="Es Jeruk">
+                    <h3>Es Jeruk</h3>
+                    <p class="price">Rp3.000</p>
+                    <p class="desc">Perasan jeruk segar alami yang menyegarkan tenggorokan dan memberikan sensasi manis asam yang pas.</p>
+                </div>
+
+                <div class="menu-card slide-up">
+                    <img src="sodagembira.jpg" alt="Soda Gembira">
+                    <h3>Soda Gembira</h3>
+                    <p class="price">Rp10.000</p>
+                    <p class="desc">Perpaduan soda, susu kental manis, dan sirup merah yang menciptakan sensasi segar dan manis dalam satu tegukan.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+<!-- PROMO & PAKET SPESIAL -->
+<section class="promo" id="promo">
+    <h2>Promo & Paket Spesial</h2>
+    <p class="subtext">Nikmati hidangan lezat dengan harga lebih hemat 🎉</p>
+    <div class="promo-container">
+
+        <div class="promo-card">
+            <h3>Paket Makan Keluarga</h3>
+            <p class="price">Rp70.000</p>
+            <p class="desc">Paket lengkap untuk 4 orang: 2 ayam goreng, 2 lele bakar, nasi, sambal, lalapan, dan 4 es teh manis. Cocok untuk makan bareng keluarga!</p>
+        </div>
+
+        <div class="promo-card">
+            <h3>Paket Berdua</h3>
+            <p class="price">Rp35.000</p>
+            <p class="desc">Pilihan hemat untuk 2 orang: 2 porsi ayam goreng + nasi, sambal, lalapan, dan 2 minuman segar pilihan.</p>
+        </div>
+
+        <div class="promo-card">
+            <h3>Paket Pelajar</h3>
+            <p class="price">Rp15.000</p>
+            <p class="desc">Khusus pelajar! 1 porsi nasi + ayam kecil + sambal + lalapan + es jeruk manis. Murah tapi kenyang!</p>
+        </div>
+
+    </div>
+</section>
+
+  <!-- TESTIMONI -->
+<section class="testimoni" id="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+    <p class="subtext">Beberapa ulasan jujur dari pelanggan setia kami ❤️</p>
+    <div class="testi-container">
+
+        <div class="testi-card">
+            <h3>Wildan Maulana Prasitio</h3>
+            <p>"Rasanya benar-benar seperti masakan rumah sendiri! Sambalnya juara dan gurame-nya garing banget. Pasti balik lagi!"</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="testi-card">
+            <h3>Muhammad Affizar Ibrahim Al Kautsar</h3>
+            <p>"Harga terjangkau tapi kualitasnya luar biasa. Tempatnya juga bersih dan nyaman buat makan bareng keluarga."</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="testi-card">
+            <h3>Haidar</h3>
+            <p>"Pelayanannya cepat, makanannya fresh banget. Saya paling suka paket ayam bakarnya, mantap!"</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Kontak -->
+    <section class="kontak" id="kontak">
+        <div class="container fade-in">
+            <h2>Hubungi Kami</h2>
+            <p>📍 Alamat: Jl. Manyar No 73, Slawu, Jember</p>
+            <p>📞 Telepon: 0821-4141-1585</p>
+            <p>📸 Instagram: <a href="https://instagram.com/warungarofahslawu" target="_blank">@warungarofahslawu</a></p>
+            <p>🕒 Jam Buka: Setiap Hari | 08.00 - 21.00 WIB</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <!-- Footer -->
+<footer>
+    <div class="footer-lokasi">
+        <h3>📍 Lokasi Kami</h3>
+        <p>Warung Makan Arofah - Jl. Manyar No. 73, Slawu, Jember</p>
+        <iframe 
+            src="https://www.google.com/maps?q=Warung+Makan+Arofah+Slawu+Jember&output=embed" 
+            width="100%" height="250" style="border:0; border-radius:10px; margin-top:10px;" 
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <p id="status-buka">⏰ Sedang menghitung jam buka...</p>
+    <script>
+        const jam = new Date().getHours();
+        const status = document.getElementById('status-buka');
+        if (jam >= 8 && jam < 22) {
+            status.textContent = "✅ Warung sedang BUKA (08.00 - 22.00)";
+            status.style.color = "lightgreen";
+        } else {
+            status.textContent = "❌ Warung sedang TUTUP (Buka pukul 08.00 - 22.00)";
+            status.style.color = "red";
+        }
+    </script>
+
+    <p>&copy; 2025 Warung Makan Arofah. Semua hak dilindungi.</p>
+</footer>
+
+
+</body>
+</html>
